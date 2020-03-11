@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-app.set('port',3000); //Obteniendo esta variable como configuracion
+app.set('port',2000); //Obteniendo esta variable como configuracion
 app.set('views',path.join(__dirname,'views'));
 app.set('view engine','ejs')//Motor de plantilla
 
@@ -18,5 +18,5 @@ app.get('/',(req,res) => {
 
 
 app.listen(app.get('port'),() => {
-    console.log('Server on port',3000);
+    console.log('Server on port',2000);
 }); //Servidor Para desarrollo
